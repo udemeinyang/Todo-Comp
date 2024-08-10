@@ -5,12 +5,12 @@ import androidx.room.PrimaryKey
 import com.example.thespy.Util.Constants.DATABASE_TABLE
 
 @Entity(tableName = DATABASE_TABLE)
-data class TodoTask(
+data class ToDoTask(
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0,
     var title: String,
     var description: String,
-    var priority: Priority
+    var  priority: Priority
 
 
 )
